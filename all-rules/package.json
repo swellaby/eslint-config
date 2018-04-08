@@ -1,0 +1,40 @@
+{
+    "name": "@swellaby/eslint-config-all",
+    "version": "0.0.1",
+    "description": "Our eslint configuration extended eslint's all ruleset",
+    "main": "index.js",
+    "scripts": {
+      "build": "cd .. && npm run build:ar",
+      "lint": "cd .. && npm run lint:ar",
+      "test": "cd .. && npm run test:ar"
+    },
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/swellaby/eslint-config.git"
+    },
+    "keywords": [
+      "swellaby",
+      "config",
+      "eslint",
+      "eslintconfig",
+      "eslint-config"
+    ],
+    "author": {
+      "name": "Swellaby",
+      "email": "opensource@swellaby.com",
+      "url": "http://swellaby.com"
+    },
+    "contributors": [
+      {
+        "name": "Caleb Cartwright",
+        "url": "https://github.com/calebcartwright"
+      }
+    ],
+    "license": "MIT",
+    "bugs": {
+      "url": "https://github.com/swellaby/eslint-config/issues",
+      "email": "opensource@swellaby.com"
+    },
+    "homepage": "https://github.com/swellaby/eslint-config#README"
+  }
+  

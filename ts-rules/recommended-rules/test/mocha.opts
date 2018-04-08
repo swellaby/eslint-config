@@ -1,0 +1,6 @@
+--ui tdd
+--timeout 75
+-R mocha-multi
+--reporter-options spec=-,xunit=./all-rules/.testresults
+--recursive
+./all-rules/test/**/*.js
