@@ -6,7 +6,30 @@ const always = 'always';
 
 module.exports = {
     extends: 'eslint:recommended',
+    overrides: [
+        {
+            files: [
+                '**/*-tests.js',
+                '**/*-test.js',
+                '**/*.tests.js',
+                '**/*.test.js',
+                '**/*-spec.js',
+                '**/*.spec.js'
+            ],
+            rules: {
+                'max-statements': [
+                    off
+                ]
+            }
+        }
+    ],
     rules: {
+        complexity: [
+            error,
+            {
+                max: 10
+            }
+        ],
         indent: [
             error,
             4,
@@ -17,16 +40,11 @@ module.exports = {
         'linebreak-style': [
             off
         ],
-        quotes: [
+        'max-len': [
             error,
-            'single'
-        ],
-        semi: [
-            error,
-            always
-        ],
-        'no-console': [
-            off
+            {
+                code: 140
+            }
         ],
         'max-statements': [
             error,
@@ -37,27 +55,26 @@ module.exports = {
                 ignoreTopLevelFunctions: true
             }
         ],
-        'require-yield': [
+        'no-console': [
             off
-        ],
-        strict: [
-            error,
-            'global'
         ],
         'no-trailing-spaces': [
             error
         ],
-        complexity: [
+        quotes: [
             error,
-            {
-                max: 10
-            }
+            'single'
         ],
-        'max-len': [
+        'require-yield': [
+            off
+        ],
+        semi: [
             error,
-            {
-                code: 140
-            }
+            always
+        ],
+        strict: [
+            error,
+            'global'
         ]
     }
 };

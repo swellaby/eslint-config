@@ -6,7 +6,39 @@ const always = 'always';
 
 module.exports = {
     extends: 'eslint:all',
+    overrides: [
+        {
+            files: [
+                '**/*-tests.js',
+                '**/*-test.js',
+                '**/*.tests.js',
+                '**/*.test.js',
+                '**/*-spec.js',
+                '**/*.spec.js'
+            ],
+            rules: {
+                'max-statements': [
+                    off
+                ]
+            }
+        }
+    ],
     rules: {
+        'array-bracket-newline': [
+            off
+        ],
+        'capitalized-comments': [
+            off
+        ],
+        complexity: [
+            error,
+            {
+                max: 10
+            }
+        ],
+        'eol-last': [
+            off
+        ],
         indent: [
             error,
             4,
@@ -17,16 +49,11 @@ module.exports = {
         'linebreak-style': [
             off
         ],
-        quotes: [
+        'max-len': [
             error,
-            'single'
-        ],
-        semi: [
-            error,
-            always
-        ],
-        'no-console': [
-            off
+            {
+                code: 140
+            }
         ],
         'max-statements': [
             error,
@@ -37,37 +64,17 @@ module.exports = {
                 ignoreTopLevelFunctions: true
             }
         ],
-        'require-yield': [
+        'multiline-comment-style': [
             off
         ],
-        strict: [
-            error,
-            'global'
-        ],
-        'no-trailing-spaces': [
-            error
-        ],
-        complexity: [
-            error,
-            {
-                max: 10
-            }
+        'no-console': [
+            off
         ],
         'no-magic-numbers': [
             off
         ],
-        'quote-props': [
-            2,
-            'as-needed',
-            {
-                keywords: false
-            }
-        ],
-        'sort-keys': [
-            off
-        ],
-        'array-bracket-newline': [
-            off
+        'no-trailing-spaces': [
+            error
         ],
         'object-curly-newline': [
             off,
@@ -76,29 +83,42 @@ module.exports = {
                 minProperties: 2
             }
         ],
-        'eol-last': [
+        'one-var': [
             off
         ],
         'padded-blocks': [
             off
         ],
-        'max-len': [
-            error,
-            {
-                code: 140
-            }
-        ],
-        'one-var': [
-            off
-        ],
         'prefer-destructuring': [
             off
         ],
-        'multiline-comment-style': [
+        'prefer-template': [
             off
         ],
-        'capitalized-comments': [
+        'quote-props': [
+            error,
+            'as-needed',
+            {
+                keywords: false
+            }
+        ],
+        quotes: [
+            error,
+            'single'
+        ],
+        'require-yield': [
             off
+        ],
+        semi: [
+            error,
+            always
+        ],
+        'sort-keys': [
+            error
+        ],
+        strict: [
+            error,
+            'global'
         ]
     }
 };

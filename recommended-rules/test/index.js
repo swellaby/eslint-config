@@ -9,6 +9,14 @@ suite('Recommended rules Suite:', () => {
         assert.deepEqual(config.extends, 'eslint:recommended');
     });
 
+    test('Should set override to disable max-statements rule for test files', () => {
+        const maxStatementOverride = config.overrides[0];
+        const maxStatementRule = maxStatementOverride.rules[helpers.eslintRuleNames.maxStatements];
+        assert.deepEqual(maxStatementOverride.files.length, 6);
+        assert.deepEqual(maxStatementOverride.files, helpers.eslintRuleOverrides.maxStatementsTestFilesOverride.expectedFiles);
+        assert.deepEqual(maxStatementRule[0], helpers.eslintRuleSettings.disabled);
+    });
+
     test('Should set correct indent rule', () => {
         const indentRule = config.rules.indent;
         assert.deepEqual(indentRule.length, 3);
@@ -21,6 +29,13 @@ suite('Recommended rules Suite:', () => {
         const linebreakStyleRule = config.rules[helpers.eslintRuleNames.linebreakStlye];
         assert.deepEqual(linebreakStyleRule.length, 1);
         assert.deepEqual(linebreakStyleRule[0], helpers.eslintRuleSettings.disabled);
+    });
+
+    test('Should set quotes rule to single quote', () => {
+        const quotesRule = config.rules.quotes;
+        assert.deepEqual(quotesRule.length, 2);
+        assert.deepEqual(quotesRule[0], helpers.eslintRuleSettings.error);
+        assert.deepEqual(quotesRule[1], helpers.eslintConfigKeys.single);
     });
 
     test('Should set config rule to always require semicolons', () => {

@@ -45,9 +45,10 @@
         "prepub:rr": "npm run build:rr && npm run license:rr && npm run version:r",
         "prepub:pc": "npm run build:pc && npm run license:pc && npm run version:pc",
         "prepub:all": "npm run prepub:ar && npm run prepub:rr && npm run prepub:pc",
-        "publish:ar": "npm run prepub:ar && cd all-rules && npm publish",
-        "publish:rr": "npm run prepub:rr && cd recommended-rules && npm publish",
-        "publish:pc": "npm run prepub:pc && cd partial-coverage && npm publish",
+        "publish:ar": "npm run prepub:ar && cd all-rules && npm publish --access public",
+        "publish:rr": "npm run prepub:rr && cd recommended-rules && npm publish --access public",
+        "publish:pc": "npm run prepub:pc && cd partial-coverage && npm publish --access public",
         "publish:all": "npm run publish:base && npm run publish:cc && npm run publish:pc"
-    }
+    },
+    "dependencies": {}
 }
