@@ -1,5 +1,5 @@
 # eslint-config-all
-Our configuration for [eslint][eslint-url] using the ['all' ruleset][eslint-all-rules-url] of [eslint][eslint-url]. Geared for our specific needs, but feel free to use it if it helps for you (you can always override any rule in your eslint config file)!  
+Our configuration for [eslint][eslint-url] extending the [eslint:all ruleset][eslint-all-rules-url] of [eslint][eslint-url]. Geared for our specific needs, but feel free to use it if it helps for you (you can always override any rule in your eslint config file)!  
 [![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url] [![license Badge][license-badge]][license-url]
 
 ## Configuration  

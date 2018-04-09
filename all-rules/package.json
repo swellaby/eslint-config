@@ -1,7 +1,7 @@
 {
   "name": "@swellaby/eslint-config-all",
   "version": "0.0.4",
-  "description": "Our eslint configuration extended eslint's all ruleset",
+  "description": "Our eslint configuration extending the eslint:all ruleset",
   "main": "index.js",
   "scripts": {
     "build": "cd .. && npm run build:ar",
@@ -17,7 +17,8 @@
     "config",
     "eslint",
     "eslintconfig",
-    "eslint-config"
+    "eslint-config",
+    "eslint:all"
   ],
   "author": {
     "name": "Swellaby",

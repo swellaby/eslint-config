@@ -1,12 +1,12 @@
 {
     "name": "@swellaby/eslint-config-recommended",
     "version": "0.0.1",
-    "description": "Our eslint configuration extended eslint's recommended ruleset",
+    "description": "Our eslint configuration extending the eslint:recommended ruleset",
     "main": "index.js",
     "scripts": {
-      "build": "cd .. && npm run build:base",
-      "lint": "cd .. && npm run lint:base",
-      "test": "cd .. && npm run test:base"
+      "build": "cd .. && npm run build:rr",
+      "lint": "cd .. && npm run lint:rr",
+      "test": "cd .. && npm run test:rr"
     },
     "repository": {
       "type": "git",
@@ -17,7 +17,8 @@
       "config",
       "eslint",
       "eslintconfig",
-      "eslint-config"
+      "eslint-config",
+      "eslint:recommended"
     ],
     "author": {
       "name": "Swellaby",
@@ -35,6 +36,6 @@
       "url": "https://github.com/swellaby/eslint-config/issues",
       "email": "opensource@swellaby.com"
     },
-    "homepage": "https://github.com/swellaby/eslint-config#README"
+    "homepage": "https://github.com/swellaby/eslint-config/blob/master/recommended-rules/README.md"
   }
   
