@@ -17,6 +17,13 @@ suite('Recommended rules Suite:', () => {
         assert.deepEqual(maxStatementRule[0], helpers.eslintRuleSettings.disabled);
     });
 
+    test('Should correctly set rule for cyclomatic complexity threshold', () => {
+        const complexityRule = config.rules.complexity;
+        assert.deepEqual(complexityRule.length, 2);
+        assert.deepEqual(complexityRule[0], helpers.eslintRuleSettings.error);
+        assert.deepEqual(complexityRule[1].max, 10);
+    });
+
     test('Should set correct indent rule', () => {
         const indentRule = config.rules.indent;
         assert.deepEqual(indentRule.length, 3);
@@ -31,24 +38,11 @@ suite('Recommended rules Suite:', () => {
         assert.deepEqual(linebreakStyleRule[0], helpers.eslintRuleSettings.disabled);
     });
 
-    test('Should set quotes rule to single quote', () => {
-        const quotesRule = config.rules.quotes;
-        assert.deepEqual(quotesRule.length, 2);
-        assert.deepEqual(quotesRule[0], helpers.eslintRuleSettings.error);
-        assert.deepEqual(quotesRule[1], helpers.eslintConfigKeys.single);
-    });
-
-    test('Should set config rule to always require semicolons', () => {
-        const semiRule = config.rules.semi;
-        assert.deepEqual(semiRule.length, 2);
-        assert.deepEqual(semiRule[0], helpers.eslintRuleSettings.error);
-        assert.deepEqual(semiRule[1], helpers.eslintRuleOptions.always);
-    });
-
-    test('Should disable no-console rule', () => {
-        const noConsoleRule = config.rules[helpers.eslintRuleNames.noConsole];
-        assert.deepEqual(noConsoleRule.length, 1);
-        assert.deepEqual(noConsoleRule[0], helpers.eslintRuleSettings.disabled);
+    test('Should correctly set max-len rule', () => {
+        const maxLenRule = config.rules[helpers.eslintRuleNames.maxLen];
+        assert.deepEqual(maxLenRule.length, 2);
+        assert.deepEqual(maxLenRule[0], helpers.eslintRuleSettings.error);
+        assert.deepEqual(maxLenRule[1].code, 140);
     });
 
     test('Should set correct max statements rule', () => {
@@ -59,17 +53,10 @@ suite('Recommended rules Suite:', () => {
         assert.isTrue(maxStatementsRule[2].ignoreTopLevelFunctions);
     });
 
-    test('Should disable require-yield rule', () => {
-        const requireYieldRule = config.rules[helpers.eslintRuleNames.requireYield];
-        assert.deepEqual(requireYieldRule.length, 1);
-        assert.deepEqual(requireYieldRule[0], helpers.eslintRuleSettings.disabled);
-    });
-
-    test('Should require global strict mode rule', () => {
-        const strictRule = config.rules.strict;
-        assert.deepEqual(strictRule.length, 2);
-        assert.deepEqual(strictRule[0], helpers.eslintRuleSettings.error);
-        assert.deepEqual(strictRule[1], helpers.eslintConfigKeys.global);
+    test('Should disable no-console rule', () => {
+        const noConsoleRule = config.rules[helpers.eslintRuleNames.noConsole];
+        assert.deepEqual(noConsoleRule.length, 1);
+        assert.deepEqual(noConsoleRule[0], helpers.eslintRuleSettings.disabled);
     });
 
     test('Should set rule to disallow trailing spaces', () => {
@@ -78,10 +65,30 @@ suite('Recommended rules Suite:', () => {
         assert.deepEqual(noTrailingSpacesRule[0], helpers.eslintRuleSettings.error);
     });
 
-    test('Should correctly set rule for cyclomatic complexity threshold', () => {
-        const complexityRule = config.rules.complexity;
-        assert.deepEqual(complexityRule.length, 2);
-        assert.deepEqual(complexityRule[0], helpers.eslintRuleSettings.error);
-        assert.deepEqual(complexityRule[1].max, 10);
+    test('Should set quotes rule to single quote', () => {
+        const quotesRule = config.rules.quotes;
+        assert.deepEqual(quotesRule.length, 2);
+        assert.deepEqual(quotesRule[0], helpers.eslintRuleSettings.error);
+        assert.deepEqual(quotesRule[1], helpers.eslintConfigKeys.single);
+    });
+
+    test('Should disable require-yield rule', () => {
+        const requireYieldRule = config.rules[helpers.eslintRuleNames.requireYield];
+        assert.deepEqual(requireYieldRule.length, 1);
+        assert.deepEqual(requireYieldRule[0], helpers.eslintRuleSettings.disabled);
+    });
+
+    test('Should set config rule to always require semicolons', () => {
+        const semiRule = config.rules.semi;
+        assert.deepEqual(semiRule.length, 2);
+        assert.deepEqual(semiRule[0], helpers.eslintRuleSettings.error);
+        assert.deepEqual(semiRule[1], helpers.eslintRuleOptions.always);
+    });
+
+    test('Should require global strict mode rule', () => {
+        const strictRule = config.rules.strict;
+        assert.deepEqual(strictRule.length, 2);
+        assert.deepEqual(strictRule[0], helpers.eslintRuleSettings.error);
+        assert.deepEqual(strictRule[1], helpers.eslintConfigKeys.global);
     });
 });
