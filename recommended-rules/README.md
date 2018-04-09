@@ -33,5 +33,6 @@ MIT - see license details [here][license-url]
 [npmjs-pkg-url]: https://www.npmjs.com/package/@swellaby/eslint-config-recommended
 [eslint-url]: https://eslint.org/
 [eslint-recommended-rules-url]: https://eslint.org/docs/user-guide/configuring#using-eslintrecommended
+[eslint-config-files-url]: https://eslint.org/docs/user-guide/configuring#using-configuration-files
 [license-url]: https://github.com/swellaby/eslint-config/blob/master/LICENSE
 [license-badge]: https://img.shields.io/github/license/swellaby/eslint-config.svg
