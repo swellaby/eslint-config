@@ -1,7 +1,5 @@
 'use strict';
 
-'use strict';
-
 module.exports = {
     extends: './all-rules/index.js',
     env: {

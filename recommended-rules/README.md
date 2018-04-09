@@ -2,7 +2,24 @@
 Our configuration for [eslint][eslint-url] extending the [eslint:recommended ruleset][eslint-recommended-rules-url] of [eslint][eslint-url]. Geared for our specific needs, but feel free to use it if it helps for you (you can always override any rule in your eslint config file)!  
 [![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url] [![license Badge][license-badge]][license-url]
 
-## Configuration  
+## Installation
+Install the eslint config as a dev dependency:
+```sh
+npm i @swellaby/eslint-config-recommended --save-dev
+```
+
+## Usage
+Add an `extends` key to your [eslint config file][eslint-config-files-url] with the value of `@swellaby/eslint-config-recommended`:
+
+For example if you have your eslint config in a json file:
+```json
+{
+    "extends": "@swellaby/eslint-config-recommended"
+}
+``` 
+
+## Configuration
+This module specifies the following eslint configuration:
 
 * A
 * B
