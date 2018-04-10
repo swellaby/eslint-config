@@ -14,7 +14,9 @@ module.exports = {
                 '**/*.tests.js',
                 '**/*.test.js',
                 '**/*-spec.js',
-                '**/*.spec.js'
+                '**/*.spec.js',
+                '**/test/**/*.js',
+                '**/tests/**/*.js'
             ],
             rules: {
                 'max-statements': [
@@ -61,7 +63,7 @@ module.exports = {
                 max: 12
             },
             {
-                ignoreTopLevelFunctions: true
+                ignoreTopLevelFunctions: false
             }
         ],
         'multiline-comment-style': [

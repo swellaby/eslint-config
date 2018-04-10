@@ -34,13 +34,15 @@ module.exports = {
     },
     eslintRuleOverrides: {
         maxStatementsTestFilesOverride: {
-            expectedFiles: [
+            testFiles: [
                 '**/*-tests.js',
                 '**/*-test.js',
                 '**/*.tests.js',
                 '**/*.test.js',
                 '**/*-spec.js',
-                '**/*.spec.js'
+                '**/*.spec.js',
+                '**/test/**/*.js',
+                '**/tests/**/*.js'
             ]
         }
     },

@@ -9,12 +9,12 @@ suite('All rules Suite:', () => {
         assert.deepEqual(config.extends, 'eslint:all');
     });
 
-    test('Should set override to disable max-statements rule for test files', () => {
-        const maxStatementOverride = config.overrides[0];
-        const maxStatementRule = maxStatementOverride.rules[helpers.eslintRuleNames.maxStatements];
-        assert.deepEqual(maxStatementOverride.files.length, 6);
-        assert.deepEqual(maxStatementOverride.files, helpers.eslintRuleOverrides.maxStatementsTestFilesOverride.expectedFiles);
-        assert.deepEqual(maxStatementRule[0], helpers.eslintRuleSettings.disabled);
+    test('Should correctly set override max-statements rule to exclude all test files', () => {
+        const maxStatementsOverride = config.overrides[0];
+        const maxStatementsRule = maxStatementsOverride.rules[helpers.eslintRuleNames.maxStatements];
+        assert.deepEqual(maxStatementsOverride.files.length, 8);
+        assert.deepEqual(maxStatementsOverride.files, helpers.eslintRuleOverrides.maxStatementsTestFilesOverride.testFiles);
+        assert.deepEqual(maxStatementsRule[0], helpers.eslintRuleSettings.disabled);
     });
 
     test('Should disable array-bracket-newline rule', () => {
@@ -68,7 +68,7 @@ suite('All rules Suite:', () => {
         assert.deepEqual(maxStatementsRule.length, 3);
         assert.deepEqual(maxStatementsRule[0], helpers.eslintRuleSettings.error);
         assert.deepEqual(maxStatementsRule[1].max, 12);
-        assert.isTrue(maxStatementsRule[2].ignoreTopLevelFunctions);
+        assert.isFalse(maxStatementsRule[2].ignoreTopLevelFunctions);
     });
 
     test('Should disable multiline-comment-style rule', () => {
