@@ -1,7 +1,7 @@
 'use strict';
 
 module.exports = {
-    extends: './all-rules/index.js',
+    extends: './rules/all/index.js',
     env: {
         commonjs: true,
         node: true,

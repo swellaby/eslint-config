@@ -2,7 +2,7 @@
 
 const assert = require('chai').assert;
 const config = require('..');
-const helpers = require('../../helpers');
+const helpers = require('../../../helpers');
 
 suite('Recommended rules Suite:', () => {
     test('Should extend the eslint recommended ruleset', () => {

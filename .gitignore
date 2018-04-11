@@ -3,4 +3,4 @@ node_modules/
 .npm
 **/.testresults/
 **/*.tgz
-*/LICENSE
+*/**/LICENSE
