@@ -1,12 +1,12 @@
 {
-  "name": "@swellaby/eslint-config-recommended",
-  "version": "0.0.17",
-  "description": "Our eslint configuration extending the eslint:recommended ruleset",
+  "name": "@swellaby/eslint-config-env-browser",
+  "version": "0.0.4",
+  "description": "Our eslint configuration enabling the browser environment",
   "main": "index.js",
   "scripts": {
-    "build": "cd .. && npm run build:rr",
-    "lint": "cd .. && npm run lint:rr",
-    "test": "cd .. && npm run test:rr"
+    "build": "cd ../.. && npm run build:env:browser",
+    "lint": "cd ../.. && npm run lint:env:browser",
+    "test": "cd ../.. && npm run test:env:browser"
   },
   "repository": {
     "type": "git",
@@ -17,8 +17,7 @@
     "config",
     "eslint",
     "eslintconfig",
-    "eslint-config",
-    "eslint:recommended"
+    "eslint-config"
   ],
   "author": {
     "name": "Swellaby",
@@ -36,5 +35,5 @@
     "url": "https://github.com/swellaby/eslint-config/issues",
     "email": "opensource@swellaby.com"
   },
-  "homepage": "https://github.com/swellaby/eslint-config/blob/master/recommended-rules/README.md"
+  "homepage": "https://github.com/swellaby/eslint-config/blob/master/env/browser/README.md"
 }

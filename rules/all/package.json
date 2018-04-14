@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/eslint-config-all",
-  "version": "0.0.10",
+  "version": "0.0.12",
   "description": "Our eslint configuration extending the eslint:all ruleset",
   "main": "index.js",
   "scripts": {

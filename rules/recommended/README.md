@@ -9,12 +9,12 @@ npm i @swellaby/eslint-config-recommended --save-dev
 ```
 
 ## Usage
-Add an `extends` key to your [eslint config file][eslint-config-files-url] with the value of `@swellaby/eslint-config-recommended`:
+Add an `extends` key to your [eslint config file][eslint-config-files-url] and in the value specify an array that includes `@swellaby/eslint-config-recommended`:
 
 For example if you have your eslint config in a json file:
 ```json
 {
-    "extends": "@swellaby/eslint-config-recommended"
+    "extends": [ "@swellaby/eslint-config-recommended" ]
 }
 ``` 
 
