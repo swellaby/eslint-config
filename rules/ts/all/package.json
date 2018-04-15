@@ -1,12 +1,12 @@
 {
-  "name": "@swellaby/eslint-config-all",
+  "name": "@swellaby/eslint-config-ts-all",
   "version": "0.0.2",
-  "description": "Our eslint configuration extended eslint's all ruleset",
+  "description": "Our eslint rule configuration extending the eslint:all ruleset for targetting TypeScript based repos",
   "main": "index.js",
   "scripts": {
-    "build": "cd .. && npm run build:base",
-    "lint": "cd .. && npm run lint:base",
-    "test": "cd .. && npm run test:base"
+    "build": "cd ../../.. && npm run build:rules:tsall",
+    "lint": "cd ../.. && npm run lint:rules:tsall",
+    "test": "cd ../. && npm run test:rules:tsall"
   },
   "repository": {
     "type": "git",
@@ -35,5 +35,5 @@
     "url": "https://github.com/swellaby/eslint-config/issues",
     "email": "opensource@swellaby.com"
   },
-  "homepage": "https://github.com/swellaby/eslint-config#README"
+  "homepage": "https://github.com/swellaby/eslint-config/blob/master/rules/ts/all/README.md"
 }

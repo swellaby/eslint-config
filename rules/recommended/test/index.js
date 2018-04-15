@@ -42,7 +42,7 @@ suite('Recommended rules Suite:', () => {
         const maxLenRule = config.rules[helpers.eslintRuleNames.maxLen];
         assert.deepEqual(maxLenRule.length, 2);
         assert.deepEqual(maxLenRule[0], helpers.eslintRuleSettings.error);
-        assert.deepEqual(maxLenRule[1].code, 140);
+        assert.deepEqual(maxLenRule[1].code, 180);
     });
 
     test('Should set correct max statements rule', () => {

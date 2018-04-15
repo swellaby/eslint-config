@@ -1,12 +1,12 @@
 {
-  "name": "@swellaby/eslint-config-all",
-  "version": "1.0.12",
-  "description": "Our eslint rule configuration extending the eslint:all ruleset",
+  "name": "@swellaby/eslint-config-node",
+  "version": "0.0.4",
+  "description": "Our eslint configuration bundle for node repos",
   "main": "index.js",
   "scripts": {
-    "build": "cd ../.. && npm run build:rules:all",
-    "lint": "cd ../.. && npm run lint:rules:all",
-    "test": "cd ../.. && npm run test:rules:all"
+    "build": "cd ../.. && npm run build:bundles:node",
+    "lint": "cd ../.. && npm run lint:bundles:node",
+    "test": "cd ../.. && npm run test:bundles:node"
   },
   "repository": {
     "type": "git",
@@ -18,7 +18,7 @@
     "eslint",
     "eslintconfig",
     "eslint-config",
-    "eslint:all"
+    "eslint:recommended"
   ],
   "author": {
     "name": "Swellaby",
@@ -36,5 +36,9 @@
     "url": "https://github.com/swellaby/eslint-config/issues",
     "email": "opensource@swellaby.com"
   },
-  "homepage": "https://github.com/swellaby/eslint-config/blob/master/rules/all/README.md"
+  "homepage": "https://github.com/swellaby/eslint-config/blob/master/bundles/node/README.md",
+  "dependencies": {
+    "@swellaby/eslint-config-env-node": "0.0.4",
+    "@swellaby/eslint-config-recommended": "0.0.15"
+  }
 }
