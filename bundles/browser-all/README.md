@@ -5,16 +5,16 @@ Our [eslint][eslint-url] configuration bundle that provides our desired linting 
 ## Installation
 Install the eslint config as a dev dependency:
 ```sh
-npm i @swellaby/eslint-config-browser --save-dev
+npm i @swellaby/eslint-config-browser-all --save-dev
 ```
 
 ## Usage
-Add an `extends` key to your [eslint config file][eslint-config-files-url] and in the value specify an array that includes `@swellaby/eslint-config-browser`:
+Add an `extends` key to your [eslint config file][eslint-config-files-url] and in the value specify an array that includes `@swellaby/eslint-config--all`:
 
 For example if you have your eslint config in a json file:
 ```json
 {
-    "extends": [ "@swellaby/eslint-config-browser" ]
+    "extends": [ "@swellaby/eslint-config-browser-all" ]
 }
 ``` 
 
@@ -29,8 +29,8 @@ This module specifies the following eslint configuration:
 ## License
 MIT - see license details [here][license-url]
 
-[npmjs-version-badge]: https://img.shields.io/npm/v/@swellaby/eslint-config-browser.svg
-[npmjs-pkg-url]: https://www.npmjs.com/package/@swellaby/eslint-config-browser
+[npmjs-version-badge]: https://img.shields.io/npm/v/@swellaby/eslint-config-browser-all.svg
+[npmjs-pkg-url]: https://www.npmjs.com/package/@swellaby/eslint-config-all
 [eslint-url]: https://eslint.org/
 [eslint-config-files-url]: https://eslint.org/docs/user-guide/configuring#using-configuration-files
 [license-url]: https://github.com/swellaby/eslint-config/blob/master/LICENSE

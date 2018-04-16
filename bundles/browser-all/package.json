@@ -1,12 +1,12 @@
 {
-  "name": "@swellaby/eslint-config-browser",
+  "name": "@swellaby/eslint-config-browser-all",
   "version": "0.0.1",
-  "description": "Our eslint configuration bundle for browser based repos",
+  "description": "Our eslint configuration bundle for browser based repos with the extension of the eslint:all rulset",
   "main": "index.js",
   "scripts": {
-    "build": "cd ../.. && npm run build:bundles:browser",
-    "lint": "cd ../.. && npm run lint:bundles:browser",
-    "test": "cd ../.. && npm run test:bundles:browser"
+    "build": "cd ../.. && npm run build:bundles:browserall",
+    "lint": "cd ../.. && npm run lint:bundles:browserall",
+    "test": "cd ../.. && npm run test:bundles:browserall"
   },
   "repository": {
     "type": "git",
@@ -36,5 +36,5 @@
     "url": "https://github.com/swellaby/eslint-config/issues",
     "email": "opensource@swellaby.com"
   },
-  "homepage": "https://github.com/swellaby/eslint-config/blob/master/bundles/browser/README.md"
+  "homepage": "https://github.com/swellaby/eslint-config/blob/master/bundles/browser-all/README.md"
 }

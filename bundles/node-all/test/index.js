@@ -3,11 +3,11 @@
 const assert = require('chai').assert;
 const config = require('..');
 
-suite('browser bundle Suite:', () => {
+suite('node-all bundle Suite:', () => {
     test('Should extend the the correct swellaby rule and environment configs', () => {
         assert.deepEqual(config.extends.length, 2);
-        assert.isTrue(config.extends.includes('@swellaby/eslint-config-env-browser'));
-        assert.isTrue(config.extends.includes('@swellaby/eslint-config-recommended'));
+        assert.isTrue(config.extends.includes('@swellaby/eslint-config-env-node'));
+        assert.isTrue(config.extends.includes('@swellaby/eslint-config-all'));
     });
 
     test('Should not include overrides config', () => {
