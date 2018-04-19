@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/eslint-config-recommended",
-  "version": "1.0.17",
+  "version": "1.0.18",
   "description": "Our eslint rule configuration extending the eslint:recommended ruleset",
   "main": "index.js",
   "scripts": {

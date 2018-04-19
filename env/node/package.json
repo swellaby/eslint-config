@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/eslint-config-env-node",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Our eslint configuration enabling the node environment",
   "main": "index.js",
   "scripts": {
