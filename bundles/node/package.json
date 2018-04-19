@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/eslint-config-node",
-  "version": "0.0.4",
+  "version": "1.0.2",
   "description": "Our eslint configuration bundle for node repos",
   "main": "index.js",
   "scripts": {

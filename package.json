@@ -89,7 +89,7 @@
         "prepub:env": "npm run prepub:env:browser && npm run prepub:env:node",
         "prepub:rules": "npm run prepub:rules:all && npm run prepub:rules:rec && npm run prepub:rules:tsall && npm run prepub:rules:tsrec",
         "prepub:bundles:browser": "npm run build:bundles:browser && npm run license:bundles:browser && npm run version:bundles:browser",
-        "prepub:bundles:browserall": "npm run build:bundles:browserall && npm run license:bundles:browserall && npm run version:bundles:browserall",
+        "prepub:bundles:browserall": "npm run build:bundles:browserall && npm run license:bundles:browserall && npm run version:bundles:browser",
         "prepub:bundles:node": "npm run build:bundles:node && npm run license:bundles:node && npm run version:bundles:node",
         "prepub:bundles:nodeall": "npm run build:bundles:nodeall && npm run license:bundles:nodeall && npm run version:bundles:nodeall",
         "prepub:env:browser": "npm run build:env:browser && npm run license:env:browser && npm run version:env:browser",
