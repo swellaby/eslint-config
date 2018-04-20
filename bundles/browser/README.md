@@ -19,12 +19,10 @@ For example if you have your eslint config in a json file:
 ``` 
 
 ## Configuration
-This module specifies the following eslint configuration:
+This module utilizes our following eslint configurations:
 
-* A
-* B
-* C
-* D
+* [eslint-config-recommended][] - Our configuration of the eslint:recommended ruleset
+* [eslint-config-env-browser][] - Our configuration of the eslint globals/environments for browser targetted codebases
 
 ## License
 MIT - see license details [here][license-url]

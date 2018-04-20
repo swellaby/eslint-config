@@ -36,5 +36,9 @@
     "url": "https://github.com/swellaby/eslint-config/issues",
     "email": "opensource@swellaby.com"
   },
-  "homepage": "https://github.com/swellaby/eslint-config/blob/master/bundles/browser/README.md"
+  "homepage": "https://github.com/swellaby/eslint-config/blob/master/bundles/browser/README.md",
+  "dependencies": {
+    "@swellaby/eslint-config-env-browser": "^0.0.1",
+    "@swellaby/eslint-config-recommended": "^1.0.18"
+  }
 }

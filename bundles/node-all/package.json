@@ -1,5 +1,5 @@
 {
-  "name": "@swellaby/eslint-config-node",
+  "name": "@swellaby/eslint-config-node-all",
   "version": "0.0.4",
   "description": "Our eslint configuration bundle for node repos with the extension of the eslint:all rulset",
   "main": "index.js",

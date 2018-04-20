@@ -1,12 +1,12 @@
 {
-  "name": "@swellaby/eslint-config-node",
+  "name": "@swellaby/eslint-config-node-browser",
   "version": "0.0.1",
   "description": "Our eslint configuration bundle for node repos",
   "main": "index.js",
   "scripts": {
-    "build": "cd ../.. && npm run build:bundles:node",
-    "lint": "cd ../.. && npm run lint:bundles:node",
-    "test": "cd ../.. && npm run test:bundles:node"
+    "build": "cd ../.. && npm run build:bundles:nodebrowser",
+    "lint": "cd ../.. && npm run lint:bundles:nodebrowser",
+    "test": "cd ../.. && npm run test:bundles:nodebrowser"
   },
   "repository": {
     "type": "git",
