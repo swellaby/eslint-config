@@ -21,7 +21,7 @@ For example if you have your eslint config in a json format:
 ``` 
 
 ## Configuration
-This module specifies the below configuratin that extends the full [eslint:all][eslint-all-rules-url] rule configuration. Of note: we add an override for files that contain tests, specifically to disable the `max-statement` rule. This is because the rule will flag multiple test cases within test containers, as a false positive. 
+This module specifies the below configuratin that extends the full [eslint:all][eslint-all-rules-url] rule configuration. Of note: we add an override for files that contain tests, specifically to disable the `max-statements` rule. This is because the rule will flag multiple test cases within test containers, as a false positive. 
 
 ```json
 {
