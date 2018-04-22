@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/eslint-config-env-browser",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Our eslint configuration enabling the browser environment",
   "main": "index.js",
   "scripts": {

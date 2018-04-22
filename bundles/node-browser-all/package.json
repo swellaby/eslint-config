@@ -1,7 +1,7 @@
 {
-  "name": "@swellaby/eslint-config-node-browser",
-  "version": "0.0.5",
-  "description": "Our eslint configuration bundle for repos with both node and browser content that extends the eslint:recommended ruleset",
+  "name": "@swellaby/eslint-config-node-browser-all",
+  "version": "0.0.3",
+  "description": "Our eslint configuration bundle for repos with both node and browser content that extends the eslint:all ruleset",
   "main": "index.js",
   "scripts": {
     "build": "cd ../.. && npm run build:bundles:nodebrowser",

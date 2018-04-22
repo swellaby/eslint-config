@@ -1,6 +1,6 @@
 {
   "name": "@swellaby/eslint-config-browser",
-  "version": "0.0.1",
+  "version": "0.0.9",
   "description": "Our eslint configuration bundle for browser based repos",
   "main": "index.js",
   "scripts": {

@@ -3,7 +3,7 @@
 const assert = require('chai').assert;
 const config = require('..');
 
-suite('node-browser bundle Suite:', () => {
+suite('node-browser-all bundle Suite:', () => {
     test('Should extend the the correct swellaby rule and environment configs', () => {
         assert.deepEqual(config.extends.length, 3);
         assert.isTrue(config.extends.includes('@swellaby/eslint-config-env-node'));

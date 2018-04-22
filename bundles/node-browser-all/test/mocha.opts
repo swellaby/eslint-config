@@ -1,0 +1,6 @@
+--ui tdd
+--timeout 75
+-R mocha-multi
+--reporter-options spec=-,xunit=./bundles/node-browser-all/.testresults/xunit.xml
+--recursive
+./bundles/node-browser-all/test/**/*.js

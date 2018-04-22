@@ -1,5 +1,5 @@
-# eslint-config-node
-Our [eslint][eslint-url] configuration bundle that provides our desired linting setup for browser based projects. Geared for our specific needs, but feel free to use it if it helps for you (you can always override any rule in your eslint config file)!  
+# eslint-config-browser
+Our [eslint][eslint-url] configuration bundle that provides our desired linting setup for browser based projects using the eslint:recommended rule set. Geared for our specific needs, but feel free to use it if it helps for you (you can always override any rule in your eslint config file)!  
 [![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url] [![license Badge][license-badge]][license-url]
 
 ## Installation
@@ -19,10 +19,10 @@ For example if you have your eslint config in a json file:
 ``` 
 
 ## Configuration
-This module utilizes our following eslint configurations:
+This module includes our following eslint configurations:  
 
-* [eslint-config-recommended][] - Our configuration of the eslint:recommended ruleset
-* [eslint-config-env-browser][] - Our configuration of the eslint globals/environments for browser targetted codebases
+* [eslint-config-recommended][eslint-recommended-config] - Our configuration of the eslint:recommended ruleset
+* [eslint-config-env-browser][eslint-env-browser-config] - Our configuration of the eslint globals/environments for browser targetted codebases
 
 ## License
 MIT - see license details [here][license-url]
@@ -33,3 +33,5 @@ MIT - see license details [here][license-url]
 [eslint-config-files-url]: https://eslint.org/docs/user-guide/configuring#using-configuration-files
 [license-url]: https://github.com/swellaby/eslint-config/blob/master/LICENSE
 [license-badge]: https://img.shields.io/github/license/swellaby/eslint-config.svg
+[eslint-recommended-config]: https://github.com/swellaby/eslint-config/blob/master/rules/recommended/README.md#configuration
+[eslint-env-browser-config]: https://github.com/swellaby/eslint-config/blob/master/env/browser/README.md#configuration

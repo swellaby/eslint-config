@@ -1,4 +1,4 @@
-# eslint-config-all
+# eslint-config-env-node
 Our configuration for [eslint][eslint-url] that enables the environmental globals of [eslint][eslint-url] common in our node codebases. Geared for our specific needs, but feel free to use it if it helps you (you can always override any rule in your eslint config file)!  
 [![npmjs Badge][npmjs-version-badge]][npmjs-pkg-url] [![license Badge][license-badge]][license-url]
 
