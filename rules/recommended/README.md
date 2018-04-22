@@ -19,12 +19,86 @@ For example if you have your eslint config in a json file:
 ``` 
 
 ## Configuration
-This module specifies the following eslint configuration:
+This module specifies the below configuratin that extends the full [eslint:recommended][eslint-recommended-rules-url] rule configuration. Of note: we add an override for files that contain tests, specifically to disable the `max-statement` rule. This is because the rule will flag multiple test cases within test containers, as a false positive. 
 
-* A
-* B
-* C
-* D
+```json
+{
+    "extends": "eslint:recommended",
+    "overrides": [
+        {
+            "files": [
+                "**/*-tests.js",
+                "**/*-test.js",
+                "**/*.tests.js",
+                "**/*.test.js",
+                "**/*-spec.js",
+                "**/*.spec.js",
+                "**/test/**/*.js",
+                "**/tests/**/*.js"
+            ],
+            "rules": {
+                "max-statements": [
+                    "off"
+                ]
+            }
+        }
+    ],
+    "rules": {
+        "complexity": [
+            "error",
+            {
+                "max": 10
+            }
+        ],
+        "indent": [
+            "error",
+            4,
+            {
+                "SwitchCase": 1
+            }
+        ],
+        "linebreak-style": [
+            "off"
+        ],
+        "max-len": [
+            "error",
+            {
+                "code": 180
+            }
+        ],
+        "max-statements": [
+            "error",
+            {
+                "max": 12
+            },
+            {
+                "ignoreTopLevelFunctions": false
+            }
+        ],
+        "no-console": [
+            "off"
+        ],
+        "no-trailing-spaces": [
+            "error"
+        ],
+        "quotes": [
+            "error",
+            "single"
+        ],
+        "require-yield": [
+            "off"
+        ],
+        "semi": [
+            "error",
+            "always"
+        ],
+        "strict": [
+            "error",
+            "global"
+        ]
+    }
+}
+```
 
 ## License
 MIT - see license details [here][license-url]

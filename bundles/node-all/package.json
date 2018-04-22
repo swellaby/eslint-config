@@ -38,7 +38,7 @@
   },
   "homepage": "https://github.com/swellaby/eslint-config/blob/master/bundles/node-all/README.md",
   "dependencies": {
-    "@swellaby/eslint-config-env-node": "^0.0.4",
-    "@swellaby/eslint-config-all": "^0.0.10"
+    "@swellaby/eslint-config-all": "^1.0.13",
+    "@swellaby/eslint-config-env-node": "1.0.5"
   }
 }
