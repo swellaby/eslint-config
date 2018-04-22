@@ -9,7 +9,7 @@ npm i @swellaby/eslint-config-browser-all --save-dev
 ```
 
 ## Usage
-Add an `extends` key to your [eslint config file][eslint-config-files-url] and in the value specify an array that includes `@swellaby/eslint-config--all`:
+Add an `extends` key to your [eslint config file][eslint-config-files-url] and in the value specify an array that includes `@swellaby/eslint-config-all`:
 
 For example if you have your eslint config in a json file:
 ```json
