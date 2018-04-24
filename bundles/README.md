@@ -1,5 +1,5 @@
-# Bundles
-We provide several different shareable eslint configuration bundles that include a variety of eslint settings to support linting certain scenarios. 
+# eslint Configuration Bundles
+We provide several different shareable eslint configuration bundles that include a variety of eslint settings to support linting certain scenarios. Note that if you are targetting a repo that also includes TypeScript, you should check out our [eslint configuration for TypeScript repos][typescript-bundle-doc] instead.
 
 | Bundle Name | Latest Version | Summary | Package Name |
 |----------|-------------|----------|-------------|
@@ -23,3 +23,4 @@ We provide several different shareable eslint configuration bundles that include
 [eslint-config-node-browser-pkg-url]: https://www.npmjs.com/package/@swellaby/eslint-config-node-browser
 [eslint-config-node-browser-all-version-badge]: https://img.shields.io/npm/v/@swellaby/eslint-config-node-browser-all.svg
 [eslint-config-node-browser-all-pkg-url]: https://www.npmjs.com/package/@swellaby/eslint-config-node-browser-all
+[typescript-bundle-doc]: ts/README.md
