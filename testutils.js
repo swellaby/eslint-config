@@ -47,8 +47,8 @@ module.exports = {
         }
     },
     eslintRuleSettings: {
-        disabled: 'off',
         error: 'error',
+        off: 'off',
         warn: 'warn'
     }
 };

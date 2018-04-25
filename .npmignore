@@ -1,0 +1,12 @@
+.testresults
+.vscode
+bundles/
+env/
+rules/
+.eslintignore
+.eslintrc.js
+backuppackage.1.json
+testutils.js
+*.tgz
+*.tar*
+test/
