@@ -2,6 +2,7 @@
     "name": "@swellaby/eslint-config",
     "version": "0.0.3",
     "description": "Our eslint configuration modules",
+    "license": "MIT",
     "main": "lib/bundles/node.js",
     "author": {
         "name": "Swellaby",
@@ -14,14 +15,31 @@
             "url": "https://github.com/calebcartwright"
         }
     ],
-    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/swellaby/eslint-config.git"
+    },
+    "bugs": {
+        "url": "https://github.com/swellaby/eslint-config/issues",
+        "email": "opensource@swellaby.com"
+      },
+    "homepage": "https://github.com/swellaby/eslint-config/blob/master/README.md",
+    "keywords": [
+        "swellaby",
+        "config",
+        "eslint",
+        "eslintconfig",
+        "eslint-config"
+    ],
     "devDependencies": {
         "chai": "^4.1.2",
         "eslint": "^4.19.1",
         "mocha": "^5.1.1",
         "mocha-multi": "^1.0.1",
-        "ncp": "^2.0.0",
         "rimraf": "^2.6.2"
+    },
+    "peerDependencies": {
+        "eslint": ">=3.0.0"
     },
     "scripts": {
         "build": "npm run lint && npm test",

@@ -1,1 +1,0 @@
-# eslint Configuration Bundles for TypeScript Repos
