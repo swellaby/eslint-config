@@ -1,5 +1,5 @@
 # eslint Configuration Bundles
-We provide several different shareable eslint configuration bundles that include a variety of eslint settings to support linting certain scenarios. Note that if you are targetting a repo that also includes TypeScript, you should check out our [eslint configuration for TypeScript repos][typescript-bundle-doc] instead.
+We provide several different eslint configuration bundles that include a variety of eslint settings to support linting certain scenarios. Note that if you are targetting a repo that also includes TypeScript, you should check out our [eslint configuration for TypeScript repos][typescript-bundle-doc] instead.
 
 | Bundle Name | Latest Version | Summary | Package Name |
 |----------|-------------|----------|-------------|

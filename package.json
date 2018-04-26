@@ -1,6 +1,6 @@
 {
     "name": "@swellaby/eslint-config",
-    "version": "0.0.3",
+    "version": "1.0.3",
     "description": "Our eslint configuration modules",
     "license": "MIT",
     "main": "lib/bundles/node.js",
@@ -22,7 +22,7 @@
     "bugs": {
         "url": "https://github.com/swellaby/eslint-config/issues",
         "email": "opensource@swellaby.com"
-      },
+    },
     "homepage": "https://github.com/swellaby/eslint-config/blob/master/README.md",
     "keywords": [
         "swellaby",
@@ -46,6 +46,7 @@
         "lint": "eslint **/*.js",
         "test": "rimraf .testresults && mocha --opts test/mocha.opts",
         "version:tagless": "npm --no-git-tag-version version patch",
-        "publish:local": "npm run prepub:tagless && npm publish --access public"
+        "prepublish:local": "npm run build && npm run version:tagless",
+        "publish:local": "npm publish --access public"
     }
 }
