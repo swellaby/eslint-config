@@ -1,6 +1,6 @@
 {
     "name": "@swellaby/eslint-config",
-    "version": "1.0.3",
+    "version": "1.1.0",
     "description": "Our eslint configuration modules",
     "license": "MIT",
     "main": "lib/bundles/node.js",
