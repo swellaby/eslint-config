@@ -47,6 +47,8 @@
         "test": "rimraf .testresults && mocha --opts test/mocha.opts",
         "version:tagless": "npm --no-git-tag-version version patch",
         "prepublish:local": "npm run build && npm run version:tagless",
-        "publish:local": "npm publish --access public"
+        "publish:local": "npm publish --access public",
+        "dev:reset": "rimraf .testresults && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup",
+        "dev:setup": "npm install && npm run build"
     }
 }

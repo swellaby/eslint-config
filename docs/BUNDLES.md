@@ -1,5 +1,5 @@
 # eslint Configuration Bundles
-This module contains several different configurations for [eslint][eslint-url. These bundles in turn package together specific pairings of our eslint configuration for eslint [rules][rules-doc], [environments][environments-doc], and [rule overrides][overrides-doc] to provide you with a singular, complete eslint configuration for a variety of types of codebase scenarios. 
+This module contains several different configurations for [eslint][eslint-url]. These bundles in turn package together specific pairings of our eslint configuration for eslint [rules][rules-doc], [environments][environments-doc], and [rule overrides][overrides-doc] to provide you with a singular, complete eslint configuration for a variety of types of codebase scenarios. 
 
 We highly recommend that you use one of the provided bundles when utilizing this module, but you can optionally use any combination our underlying [rule configurations][rules-doc], [environment configurations][environments-doc], and/or [rule override configurations][overrides-doc] if you'd like.
 
