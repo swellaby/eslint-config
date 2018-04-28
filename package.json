@@ -1,7 +1,7 @@
 {
     "name": "@swellaby/eslint-config",
-    "version": "1.1.1",
-    "description": "Our eslint configuration modules",
+    "version": "1.1.2",
+    "description": "Our eslint configurations",
     "license": "MIT",
     "main": "lib/bundles/node.js",
     "author": {
@@ -49,6 +49,6 @@
         "prepublish:local": "npm run build && npm run version:tagless",
         "publish:local": "npm publish --access public",
         "dev:reset": "rimraf .testresults && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup",
-        "dev:setup": "npm install && npm run build"
+        "dev:setup": "npm i && npm run build"
     }
 }
