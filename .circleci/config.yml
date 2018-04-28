@@ -25,5 +25,5 @@ jobs:
           command: npm run build
 
       - store_test_results:
-          path: .testresults
+          path: ./.testresults/
   
