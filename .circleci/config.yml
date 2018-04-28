@@ -24,6 +24,7 @@ jobs:
           name: build
           command: npm run build
 
+      - run: cat .testresults/xunit.xml
       - store_test_results:
           path: ./.testresults/
   
