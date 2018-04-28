@@ -1,8 +1,10 @@
-.testresults
-.vscode
+.testresults/
+.vscode/
 bundles/
 env/
 rules/
+test/
+docs/
 .eslintignore
 .eslintrc.js
 backuppackage.1.json
