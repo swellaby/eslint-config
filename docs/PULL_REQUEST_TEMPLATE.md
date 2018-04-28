@@ -15,3 +15,5 @@ This PR:
 
 ## Details
 <<Enter any specific details here if you are changing rule config, add/removing rules, including why, etc.>>
+
+CC - @calebcartwright @beverts312 @traviskosarek
