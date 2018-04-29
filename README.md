@@ -46,5 +46,5 @@ MIT - see license details [here][license-url]
 [eslint-config-pkg-url]: https://www.npmjs.com/package/@swellaby/eslint-config-node
 [eslint-url]: https://eslint.org/
 [eslint-config-files-url]: https://eslint.org/docs/user-guide/configuring#using-configuration-files
-[bundles-docs]: docs/BUNDLES.md
-[contributing-docs]: docs/CONTRIBUTING.md
+[bundles-docs]: ./docs/BUNDLES.md
+[contributing-docs]: ./docs/CONTRIBUTING.md
