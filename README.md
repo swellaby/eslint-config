@@ -1,5 +1,6 @@
 # eslint-config
 [![npm version badge][eslint-config-version-badge]][eslint-config-pkg-url]
+[![npm downloads badge][npmjs-downloads-badge]][eslint-config-pkg-url]
 [![Circle CI Badge][circle-ci-badge]][circle-ci-url]
 [![license Badge][license-badge]][license-url]  
 
@@ -43,8 +44,9 @@ MIT - see license details [here][license-url]
 [circle-ci-badge]: https://circleci.com/gh/swellaby/eslint-config.svg?style=shield
 [circle-ci-url]: https://circleci.com/gh/swellaby/eslint-config
 [eslint-config-version-badge]: https://img.shields.io/npm/v/@swellaby/eslint-config.svg
-[eslint-config-pkg-url]: https://www.npmjs.com/package/@swellaby/eslint-config-node
+[eslint-config-pkg-url]: https://www.npmjs.com/package/@swellaby/eslint-config
+[npmjs-downloads-badge]: https://img.shields.io/npm/dt/@swellaby/eslint-config.svg
 [eslint-url]: https://eslint.org/
 [eslint-config-files-url]: https://eslint.org/docs/user-guide/configuring#using-configuration-files
-[bundles-docs]: ./docs/BUNDLES.md
-[contributing-docs]: ./docs/CONTRIBUTING.md
+[bundles-docs]: docs/BUNDLES.md
+[contributing-docs]: docs/CONTRIBUTING.md
