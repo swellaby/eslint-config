@@ -19,7 +19,7 @@ For example to use our default configuration (designed for node.js targetted cod
 
 ```json
 {
-    "extends": [ "@swellaby/eslint-config" ]
+    "extends": [ "@swellaby" ]
 }
 ```
 
@@ -48,5 +48,5 @@ MIT - see license details [here][license-url]
 [npmjs-downloads-badge]: https://img.shields.io/npm/dt/@swellaby/eslint-config.svg
 [eslint-url]: https://eslint.org/
 [eslint-config-files-url]: https://eslint.org/docs/user-guide/configuring#using-configuration-files
-[bundles-docs]: docs/BUNDLES.md
-[contributing-docs]: docs/CONTRIBUTING.md
+[bundles-docs]: https://github.com/swellaby/eslint-config/blob/master/docs/BUNDLES.md
+[contributing-docs]: https://github.com/swellaby/eslint-config/blob/master/docs/CONTRIBUTING.md
