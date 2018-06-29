@@ -1,4 +1,5 @@
-node_modules/
 .testresults/
+.circleci/
 .vscode/
 docs/
+node_modules/
