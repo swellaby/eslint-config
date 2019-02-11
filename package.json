@@ -1,54 +1,54 @@
 {
-    "name": "@swellaby/eslint-config",
-    "version": "1.1.6",
-    "description": "Our eslint configurations",
-    "license": "MIT",
-    "main": "lib/bundles/node.js",
-    "author": {
-        "name": "Swellaby",
-        "email": "opensource@swellaby.com",
-        "url": "http://swellaby.com"
-    },
-    "contributors": [
-        {
-            "name": "Caleb Cartwright",
-            "url": "https://github.com/calebcartwright"
-        }
-    ],
-    "repository": {
-        "type": "git",
-        "url": "https://github.com/swellaby/eslint-config.git"
-    },
-    "bugs": {
-        "url": "https://github.com/swellaby/eslint-config/issues",
-        "email": "opensource@swellaby.com"
-    },
-    "homepage": "https://github.com/swellaby/eslint-config/blob/master/README.md",
-    "keywords": [
-        "swellaby",
-        "config",
-        "eslint",
-        "eslintconfig",
-        "eslint-config"
-    ],
-    "devDependencies": {
-        "chai": "^4.1.2",
-        "eslint": "^5.2.0",
-        "mocha": "^5.2.0",
-        "mocha-multi": "^1.0.1",
-        "rimraf": "^2.6.2"
-    },
-    "peerDependencies": {
-        "eslint": ">=3.0.0"
-    },
-    "scripts": {
-        "build": "npm run lint && npm test",
-        "lint": "eslint **/*.js",
-        "test": "rimraf .testresults && mocha --opts test/mocha.opts",
-        "version:tagless": "npm --no-git-tag-version version patch",
-        "prepublish:local": "npm run build && npm run version:tagless",
-        "publish:local": "npm publish --access public",
-        "dev:reset": "rimraf .testresults && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup",
-        "dev:setup": "npm i && npm run build"
+  "name": "@swellaby/eslint-config",
+  "version": "1.1.7",
+  "description": "Our eslint configurations",
+  "license": "MIT",
+  "main": "lib/bundles/node.js",
+  "author": {
+    "name": "Swellaby",
+    "email": "opensource@swellaby.com",
+    "url": "http://swellaby.com"
+  },
+  "contributors": [
+    {
+      "name": "Caleb Cartwright",
+      "url": "https://github.com/calebcartwright"
     }
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/swellaby/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/swellaby/eslint-config/issues",
+    "email": "opensource@swellaby.com"
+  },
+  "homepage": "https://github.com/swellaby/eslint-config/blob/master/README.md",
+  "keywords": [
+    "swellaby",
+    "config",
+    "eslint",
+    "eslintconfig",
+    "eslint-config"
+  ],
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.13.0",
+    "mocha": "^5.2.0",
+    "mocha-multi": "^1.0.1",
+    "rimraf": "^2.6.3"
+  },
+  "peerDependencies": {
+    "eslint": ">=3.0.0"
+  },
+  "scripts": {
+    "build": "npm run lint && npm test",
+    "lint": "eslint **/*.js",
+    "test": "rimraf .testresults && mocha --opts test/mocha.opts",
+    "version:tagless": "npm --no-git-tag-version version patch",
+    "prepublish:local": "npm run build && npm run version:tagless",
+    "publish:local": "npm publish --access public",
+    "dev:reset": "rimraf .testresults && node -e \"require('rimraf').sync('node_modules');\" && npm run dev:setup",
+    "dev:setup": "npm i && npm run build"
+  }
 }
