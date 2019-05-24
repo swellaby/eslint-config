@@ -11,6 +11,7 @@ module.exports = {
         eolLast: 'eol-last',
         linebreakStlye: 'linebreak-style',
         maxLen: 'max-len',
+        maxLinesPerFunction: 'max-lines-per-function',
         maxStatements: 'max-statements',
         multilineCommentStyle: 'multiline-comment-style',
         noConsole: 'no-console',
