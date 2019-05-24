@@ -87,6 +87,13 @@ suite('rules:all Suite:', () => {
         assert.deepEqual(noTrailingSpacesRule[0], testutils.eslintRuleSettings.error);
     });
 
+    test('Should add underscore exclusion on no-unused vars', () => {
+        const noUnusedVars = config.rules[testutils.eslintRuleNames.noUnusedVars];
+        assert.deepEqual(noUnusedVars.length, 2);
+        assert.deepEqual(noUnusedVars[0], testutils.eslintRuleSettings.error);
+        assert.deepEqual(noUnusedVars[1], {argsIgnorePattern: '^_'});
+    });
+
     test('Should disable object-curly-newline rule', () => {
         const objectCurlyNewlineRule = config.rules[testutils.eslintRuleNames.objectCurlyNewline];
         // assert.deepEqual(objectCurlyNewlineRule.length, 1);
