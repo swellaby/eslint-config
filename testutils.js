@@ -17,6 +17,7 @@ module.exports = {
         noConsole: 'no-console',
         noMagicNumbers: 'no-magic-numbers',
         noTrailingSpaces: 'no-trailing-spaces',
+        noUnusedVars: 'no-unused-vars',
         objectCurlyNewline: 'object-curly-newline',
         oneVar: 'one-var',
         paddedBlocks: 'padded-blocks',

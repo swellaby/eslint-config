@@ -57,6 +57,13 @@ suite('rules:recommended Suite:', () => {
         assert.deepEqual(noTrailingSpacesRule[0], testutils.eslintRuleSettings.error);
     });
 
+    test('Should add underscore exclusion on no-unused vars', () => {
+        const noUnusedVars = config.rules[testutils.eslintRuleNames.noUnusedVars];
+        assert.deepEqual(noUnusedVars.length, 2);
+        assert.deepEqual(noUnusedVars[0], testutils.eslintRuleSettings.error);
+        assert.deepEqual(noUnusedVars[1], {argsIgnorePattern: '^_'});
+    });
+
     test('Should set quotes rule to single quote', () => {
         const quotesRule = config.rules.quotes;
         assert.deepEqual(quotesRule.length, 2);
