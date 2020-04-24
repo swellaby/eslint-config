@@ -1,3 +1,4 @@
+/* eslint-disable function-call-argument-newline */
 'use strict';
 
 const assert = require('chai').assert;
