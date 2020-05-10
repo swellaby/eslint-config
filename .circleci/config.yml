@@ -2,7 +2,7 @@ version: 2
 jobs:
   build:
     docker:
-      - image: circleci/node:8
+      - image: circleci/node:10
 
     working_directory: ~/repo
 
@@ -19,8 +19,7 @@ jobs:
           paths:
             - node_modules
           key: v0-dependencies-{{ checksum "package-lock.json" }}
-        
-      - run: 
+
+      - run:
           name: build
           command: npm run build
-  
